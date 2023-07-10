@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ua">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP-camera</title>
+    <link rel="stylesheet" href="css/switch.css">
+    <link rel="stylesheet" href="css/buttons.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/element.css">
+   
+</head>
+<body>
+<div class="wrapper">
+    <div class="header">
+        <div class="sitename">
+            <img src="/img/ico/50.png" alt="camera" width="40px" class="camera-ico">
+            <b>IP-camera</b> <span class="create" onclick="modalInCreate()">Створити нову камеру</span>
+        </div>
+        <div class="searchzonewrapper">
+                <div><input type="search" id="csearch" class="search-field" placeholder="Search your camera.."/></div>
+                <div><button class="blue-btn" id="searchbtn" style="border-color: #2196F3;">Пошук</button></div>
+                <div><button class="red-btn" id="cancelbtn">Скасувати</button></div>
+            
+        </div>
+      
+    </div >
+    
+    <div class="workspace">
+        <div class="managezone">
+            <div>
+                <h4>Manage</h4>
+            </div>
+            <div>
+                <div class="switchwrapper">
+                    <div>Сортувати за FPS</div> 
+                    <div>
+                        <label class="switch">
+                            <input type="checkbox" id="sortcheckbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <div class="displayzone">
+
+        </div> 
+    </div>
+</div>
+
+
+<script src="scr/base.js"></script>
+<script src="scr/modal.js"></script>
+<script src="scr/index.js"></script>
+<script src="scr/element.js"></script>
+<script src="scr/prepare.js"></script>
+<script src="scr/sort_searh.js"></script>
+</body>
+</html>
